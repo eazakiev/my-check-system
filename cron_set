@@ -1,0 +1,8 @@
+# Открываем cron на редактирование
+crontab -e
+
+# Добавляем строку:
+*/30 * * * * /home/evgeny/Рабочий стол/monitor_sys.sh
+
+# + настраиваем вывод на рабочий стол:
+*/30 * * * * /home/evgeny/Рабочий стол/monitor_sys.sh >> /home/evgeny/Рабочий стол/monitor_result.txt
